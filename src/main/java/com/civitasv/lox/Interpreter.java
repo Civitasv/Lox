@@ -127,6 +127,7 @@ class Interpreter implements Expr.Visitor<Object>, Stmt.Visitor<Void> {
     }
 
     private void executeBlock(List<Stmt> statements, Environment environment) {
+        // make a new environment, and add variables in it
         Environment previous = this.environment;
         try {
             this.environment = environment;

@@ -1,5 +1,8 @@
 package com.civitasv.lox;
 
+/**
+ * Used to print Abstract syntax tree of current file or expression or statement
+ */
 class AstPrinter implements Expr.Visitor<String> {
     String print(Expr expr) {
         return expr.accept(this);

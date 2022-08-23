@@ -1,7 +1,5 @@
 package com.civitasv.lox;
 
-import org.omg.CORBA.portable.IDLEntity;
-
 import java.util.ArrayList;
 import java.util.List;
 

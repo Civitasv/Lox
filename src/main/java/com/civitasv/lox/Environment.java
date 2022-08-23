@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 class Environment {
+    // really like Sicp, every time we invoke function, a new environment is established
     final Environment enclosing;
 
     private final Map<String, Object> values = new HashMap<>();
