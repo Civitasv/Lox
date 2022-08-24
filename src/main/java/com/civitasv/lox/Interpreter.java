@@ -2,6 +2,9 @@ package com.civitasv.lox;
 
 import java.util.List;
 
+// Semantic analysis, used to translate original code into java code,
+// but we not only translate it, but also execute it.
+// EMULATOR
 class Interpreter implements Expr.Visitor<Object>, Stmt.Visitor<Void> {
     private Environment environment = new Environment();
 
